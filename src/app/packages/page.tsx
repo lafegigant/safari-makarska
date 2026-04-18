@@ -35,7 +35,7 @@ export default function PackagesPage() {
           >
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Need Something Custom?</h2>
             <p className="text-gray-600 mb-6">
-              All our tours can be customized to meet your specific needs and preferences. Whether you're a beginner or an experienced hiker, we can create the perfect adventure for you.
+              All our tours can be customized to meet your specific needs and preferences. Whether you&apos;re a beginner or an experienced hiker, we can create the perfect adventure for you.
             </p>
             <ul className="space-y-3 text-gray-700 mb-6">
               <li className="flex items-center gap-3">

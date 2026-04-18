@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Ignore scripts directory (Node.js files)
+    ".github/scripts/**",
+    "verify-agents.js",
   ]),
 ]);
 
