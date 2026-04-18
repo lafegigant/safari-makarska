@@ -9,10 +9,10 @@ const fs = require('fs');
 const path = require('path');
 
 const MARKETING_CONFIG = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../agents/config/marketing.config.json'), 'utf8')
+  fs.readFileSync(path.join(__dirname, '../../agents/config/marketing.config.json'), 'utf8')
 );
 
-const REPORT_PATH = path.join(__dirname, '../agents/reports/marketing-report.md');
+const REPORT_PATH = path.join(__dirname, '../../agents/reports/marketing-report.md');
 
 class MarketingAgent {
   constructor() {

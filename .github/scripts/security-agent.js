@@ -10,10 +10,10 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const SECURITY_CONFIG = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../agents/config/security.config.json'), 'utf8')
+  fs.readFileSync(path.join(__dirname, '../../agents/config/security.config.json'), 'utf8')
 );
 
-const REPORT_PATH = path.join(__dirname, '../agents/reports/security-report.md');
+const REPORT_PATH = path.join(__dirname, '../../agents/reports/security-report.md');
 
 class SecurityAgent {
   constructor() {
