@@ -16,6 +16,12 @@ const REPORT_PATH = path.join(__dirname, '../agents/reports/marketing-report.md'
 
 class MarketingAgent {
   constructor() {
+    // Create reports directory if it doesn't exist
+    const reportsDir = path.dirname(REPORT_PATH);
+    if (!fs.existsSync(reportsDir)) {
+      fs.mkdirSync(reportsDir, { recursive: true });
+    }
+    
     this.report = [];
     this.contentGenerated = [];
     this.startTime = Date.now();
