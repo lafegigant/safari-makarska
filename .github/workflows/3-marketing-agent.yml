@@ -8,6 +8,10 @@ on:
   schedule:
     - cron: '0 8 * * MON'  # Every Monday at 8 AM
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   marketing:
     name: Generate Marketing Content
