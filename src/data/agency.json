@@ -1,0 +1,25 @@
+{
+  "agency": {
+    "name": "Safari Makarska",
+    "tagline": "Discover the Magic of Biokovo",
+    "email": "info@safarimakarska.com",
+    "phone": "+385 21 612 111",
+    "address": "Makarska, Dalmatia, Croatia",
+    "description": "Safari Makarska specializes in unforgettable hiking and adventure experiences on Mount Biokovo. With over 10 years of experience, we offer expertly guided tours for all skill levels.",
+    "aboutText": "We are passionate about sharing the natural beauty of Mount Biokovo with adventurers from around the world. Our experienced guides are dedicated to ensuring your safety, comfort, and memorable experiences.",
+    "socialLinks": {
+      "instagram": "https://instagram.com/safarimakarska",
+      "facebook": "https://facebook.com/safarimakarska",
+      "youtube": "https://youtube.com/safarimakarska"
+    },
+    "hours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 20:00",
+      "sunday": "08:00 - 18:00"
+    }
+  }
+}

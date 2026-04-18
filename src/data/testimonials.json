@@ -1,0 +1,36 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Ana Horvat",
+      "location": "Zagreb, Croatia",
+      "rating": 5,
+      "image": "/images/testimonial-1.jpg",
+      "text": "Absolutely amazing experience! The guides were knowledgeable and friendly. The views from Biokovo were breathtaking. Highly recommended!"
+    },
+    {
+      "id": 2,
+      "name": "Marco Rossi",
+      "location": "Milan, Italy",
+      "rating": 5,
+      "image": "/images/testimonial-2.jpg",
+      "text": "Best hiking tour I've ever done. Professional, safe, and incredibly beautiful. The whole team was fantastic!"
+    },
+    {
+      "id": 3,
+      "name": "Sarah Johnson",
+      "location": "London, UK",
+      "rating": 5,
+      "image": "/images/testimonial-3.jpg",
+      "text": "Outstanding! The sunset tour was magical. Worth every penny. Can't wait to come back with my family!"
+    },
+    {
+      "id": 4,
+      "name": "Petra Schmidt",
+      "location": "Berlin, Germany",
+      "rating": 5,
+      "image": "/images/testimonial-4.jpg",
+      "text": "Professional guides, perfect organization, stunning scenery. Safari Makarska exceeded all expectations!"
+    }
+  ]
+}

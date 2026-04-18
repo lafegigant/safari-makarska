@@ -1,0 +1,49 @@
+name: 📱 Marketing Agent
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/**'
+      - '.github/workflows/3-marketing-agent.yml'
+  schedule:
+    - cron: '0 8 * * MON'  # Every Monday at 8 AM
+
+jobs:
+  marketing:
+    name: Generate Marketing Content
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: 📱 Run Marketing Agent
+        run: node .github/scripts/marketing-agent.js
+
+      - name: 📊 Upload marketing report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: marketing-report
+          path: agents/reports/marketing-report.md
+
+      - name: 📋 Create issue with generated content
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('agents/reports/marketing-report.md', 'utf8');
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '📱 Weekly Marketing Content Generated',
+              body: report,
+              labels: ['marketing', 'automated']
+            });

@@ -1,0 +1,71 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "title": "Classic Biokovo Adventure",
+      "description": "Experience the breathtaking views of Mount Biokovo with our guided hiking tour. Perfect for beginners and families.",
+      "price": 45,
+      "duration": "4 hours",
+      "difficulty": "Easy",
+      "image": "/images/tour-1.jpg",
+      "highlights": [
+        "Scenic mountain views",
+        "Professional guide",
+        "Light hiking",
+        "Lunch included"
+      ],
+      "groupSize": "5-15 people"
+    },
+    {
+      "id": 2,
+      "title": "Summit Explorer",
+      "description": "Challenge yourself with this full-day expedition to the Biokovo summit. Stunning panoramic views of Dalmatian coast.",
+      "price": 65,
+      "duration": "8 hours",
+      "difficulty": "Medium",
+      "image": "/images/tour-2.jpg",
+      "highlights": [
+        "Summit experience",
+        "Panoramic views",
+        "Professional guide",
+        "Full day adventure",
+        "Packed lunch"
+      ],
+      "groupSize": "5-12 people"
+    },
+    {
+      "id": 3,
+      "title": "Photography Expedition",
+      "description": "Capture the magic of Biokovo with expert photography guidance. Ideal for photography enthusiasts of all levels.",
+      "price": 75,
+      "duration": "6 hours",
+      "difficulty": "Medium",
+      "image": "/images/tour-3.jpg",
+      "highlights": [
+        "Expert photography tips",
+        "Golden hour shooting",
+        "Best viewpoints",
+        "Professional guide",
+        "Lunch & refreshments"
+      ],
+      "groupSize": "3-8 people"
+    },
+    {
+      "id": 4,
+      "title": "Sunset Trekking",
+      "description": "Enjoy a magical sunset from Mount Biokovo. A romantic and unforgettable experience for couples.",
+      "price": 55,
+      "duration": "5 hours",
+      "difficulty": "Easy to Medium",
+      "image": "/images/tour-4.jpg",
+      "highlights": [
+        "Sunset viewing",
+        "Romantic experience",
+        "Professional guide",
+        "Wine & snacks",
+        "Headlamp provided"
+      ],
+      "groupSize": "2-10 people"
+    }
+  ]
+}

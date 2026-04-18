@@ -1,0 +1,46 @@
+{
+  "deploymentConfig": {
+    "environments": {
+      "staging": {
+        "url": "staging.safarimakarska.com",
+        "requireApproval": true,
+        "healthCheckUrl": "/api/health"
+      },
+      "production": {
+        "url": "safarimakarska.com",
+        "requireApproval": true,
+        "healthCheckUrl": "/api/health",
+        "blueGreenDeployment": true
+      }
+    },
+    "deploymentStrategy": "blue-green",
+    "timeout": 1800,
+    "rollbackOnFailure": true
+  },
+  "preDeployment": {
+    "backupDatabase": true,
+    "runMigrations": false,
+    "clearCache": true,
+    "warmCache": true
+  },
+  "healthChecks": {
+    "enabled": true,
+    "interval": 30,
+    "timeout": 10,
+    "endpoints": [
+      "/api/health",
+      "/"
+    ]
+  },
+  "notifications": {
+    "slack": true,
+    "email": true,
+    "github": true
+  },
+  "monitoring": {
+    "enabled": true,
+    "uptimeCheck": true,
+    "performanceMonitoring": true,
+    "errorTracking": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "marketingConfig": {
+    "contentGeneration": {
+      "enabled": true,
+      "types": [
+        "social-media",
+        "seo-metadata",
+        "blog-posts",
+        "email-campaigns"
+      ]
+    },
+    "seo": {
+      "generateMetaTags": true,
+      "generateSitemap": true,
+      "keywords": [
+        "Biokovo hiking",
+        "mountain tours Croatia",
+        "Makarska adventures",
+        "guided hiking tours"
+      ]
+    },
+    "socialMedia": {
+      "platforms": ["twitter", "instagram", "facebook"],
+      "postFrequency": "daily",
+      "contentTemplates": true
+    },
+    "analytics": {
+      "trackingEnabled": true,
+      "eventsToTrack": [
+        "page_view",
+        "tour_click",
+        "form_submit",
+        "booking_started"
+      ]
+    }
+  },
+  "contentRules": {
+    "maxLength": 280,
+    "minLength": 20,
+    "requiresReview": false,
+    "tone": "friendly"
+  },
+  "seoRules": {
+    "minTitleLength": 30,
+    "maxTitleLength": 60,
+    "minDescriptionLength": 120,
+    "maxDescriptionLength": 160
+  },
+  "scheduling": {
+    "enabled": true,
+    "timezone": "Europe/Zagreb",
+    "postTimes": ["09:00", "14:00", "18:00"]
+  }
+}

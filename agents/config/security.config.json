@@ -1,0 +1,52 @@
+{
+  "securityConfig": {
+    "scanTypes": [
+      "npm-audit",
+      "secret-scanning",
+      "code-analysis",
+      "dependency-check",
+      "license-compliance"
+    ],
+    "severity": {
+      "critical": "block",
+      "high": "warn",
+      "medium": "info"
+    },
+    "timeout": 1800
+  },
+  "npmAudit": {
+    "enabled": true,
+    "level": "moderate",
+    "production": true
+  },
+  "secretScanning": {
+    "enabled": true,
+    "patterns": [
+      "api_key",
+      "secret",
+      "password",
+      "token",
+      "private_key"
+    ]
+  },
+  "codeAnalysis": {
+    "enabled": true,
+    "tools": ["eslint", "typescript"]
+  },
+  "licenseCompliance": {
+    "enabled": true,
+    "allowedLicenses": [
+      "MIT",
+      "Apache-2.0",
+      "BSD-2-Clause",
+      "BSD-3-Clause",
+      "ISC",
+      "MPL-2.0"
+    ]
+  },
+  "reports": {
+    "format": "json",
+    "uploadToArtifacts": true,
+    "uploadToSecurityTab": true
+  }
+}
